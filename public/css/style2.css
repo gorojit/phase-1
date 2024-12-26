@@ -1,0 +1,183 @@
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    padding-left:16px;
+    font-family: "Space Mono", monospace;
+    font-style:normal;
+    font-size:20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+  
+
+}
+h2{
+    color: black;
+    padding-left:16px;
+    font-family: "Space Mono", monospace;
+    font-style:normal;
+    font-size:30px;
+    margin-top: 10px;
+}
+
+h3{
+    color: black;
+    font-size: small;
+}
+
+
+.navbar-nav{
+    flex:content;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+.page-2-box1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 30px
+    
+}
+.contact-info{
+    text-align: center;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 30px;
+    padding-top: 60px;
+    margin-right: 20px;
+    margin-left: 0;
+    border-radius: 10%;
+
+}
+
+.payment-area{
+    background-color: rgba(255, 255, 255, 0.215);
+    border-radius: 10px;
+   
+    padding: 5px;
+   
+    
+}
+
+.working-schedule{
+    font-weight:lighter;
+    
+}
+
+.block1{
+    padding: 3rem;
+}
+.col-lg-6{
+    padding:30px;
+    text-align: center;
+    font-size: large;
+}
+
+.border-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+}
+
+svg{
+    padding: 4px;
+}
+
+
+.btn{
+
+    transition:transform 0.3s , background-color 0.3s ,color 0.3s;
+
+
+    
+}
+
+.btn:hover{
+    transform: translateY(-10px);
+    background-color: rgb(0, 255, 85);
+    color: rgb(0, 0, 0);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translatey(100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+.line:nth-child(2){
+    transition-delay: 200ms;
+}
+.line:nth-child(3){
+    transition-delay: 400ms;
+}
+.line:nth-child(4){
+    transition-delay: 400ms;
+}
+
+
+.btn-2{
+
+    transition:transform 0.3s ,background-color 0.3s ,color 0.3s;
+
+
+    
+}
+
+
+.btn-2:hover{
+    transform: translateY(-10px);
+    background-color:#D2D2D2;
+    color: rgb(0, 0, 0);
+}
+
+.btn-3{
+
+    transition:transform 0.3s ,background-color 0.3s ,color 0.3s;
+
+
+    
+}
+
+
+.btn-3:hover{
+    transform: translateY(-10px);
+    background-color:#ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+

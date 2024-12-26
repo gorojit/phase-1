@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>customer</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Register</h1>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card">
+            <div class="card-body">
+              <!-- Makes POST request to /register route -->
+              <form action="customer.html" method="POST">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="username"
+                    minlength="10"
+                    maxlength="10"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="name">name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="address">address: </label>
+                  <input
+                    name="address"
+                    class="form-control"
+                    type="text"
+                    id="address"
+                  />
+                </div>
+
+                <div class="text-align: center;">
+                  <input
+                    type="checkbox"
+                    id="product1"
+                    name="product"
+                    value="Bike"
+                  />
+                  <label for="product1">product1</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="product2"
+                    name="product"
+                    value="Car"
+                  />
+                  <label for="product2">product2</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="product3"
+                    name="product"
+                    value="Boat"
+                  />
+                  <label for="product3">product3</label><br />
+                </div>
+                <div>
+                  <label for="message">Your Message:</label><br />
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    placeholder="Any explaination"
+                  ></textarea
+                  ><br />
+                </div>
+
+                <button type="submit" name="submit" class="btn btn-dark">
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
